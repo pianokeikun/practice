@@ -1,0 +1,253 @@
+/**
+ * リセット
+ */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  color:#8bc1d4;
+}
+
+.intro-card > div {
+  float:left;
+}
+
+.intro-card > div > *{
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+img{
+  display: block;
+  width:100%;
+}
+
+/**
+ * commmon
+ */
+.title{
+  font-size:1.2em;
+  font-family: "arial";
+  font-weight: bold;
+}
+
+.content{
+  color:#2e2e2e;
+  font-size:1.4em;
+  font-family: "メイリオ";
+} 
+
+/**
+ *　全体の区切り
+ */
+
+ul.introduce{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+ul.introduce > li{
+  width:100%;
+  text-align: center;
+}
+
+
+.intro-card{
+  min-width:1200px;
+  max-width:1200px;
+  margin:10px auto;
+  padding:10px;
+  overflow: hidden;
+  background-color:#8bc1d4;
+} 
+
+/**
+ * name/nickname
+ */
+.name-container{
+  width:45%;
+  padding:2%;
+}
+
+.name-container > .name-box {
+  width:100%;
+  height:200px;
+  padding:20px 20px 50px 20px;
+  background-image: url("image/name.png");
+}
+
+.name-container > .name-box > p{ 
+  position: relative;
+  height:50%;
+  padding:1em;
+  border-bottom:2px dotted #8bc1d4;
+}
+
+.name-container > .name-box > p > span{
+  position: absolute;
+  left:0;
+  bottom:0;
+  left:0;
+}
+
+.name-container > .name-box > p > span:nth-child(2){
+  left: 110px;
+  width: 300px;
+  text-align: center;
+}
+
+/**
+ * favorite/dislike
+ */
+ .taste-container{
+   width:27%;
+   padding: 0.4em;
+ }
+
+.taste-container > .taste{
+  width:100%;
+  min-height:300px;
+  padding:10px;
+}
+
+.taste-container:nth-child(2) > .taste{background-image:  url("image/favorite.png");}
+.taste-container:nth-child(3) > .taste{background-image: url("image/dislike.png");}
+
+.taste-container > .taste > p{
+  padding-top:5px;
+  text-align: center;
+}
+
+.taste-container> .taste > p:nth-child(2) > span{
+  display: inline-block;
+  min-width:35%;
+  max-width:80%;
+  height:2.4em;
+  padding:0.2em;
+  font-size:0.8em;
+  color:#2e2e2e;
+  border:3px solid #8bc1d4;
+}
+
+.taste-container> .taste > p:nth-child(3){
+  max-height:100px;
+  overflow: auto;
+}
+
+
+/**
+ *　下部分のセクション
+ *  パーツごとにpostion:absoluteを使う関係でこうしたほうがやりやすい
+ */
+
+.under-container{
+  width:100%;
+  height: 400px;
+  position: relative;
+}
+
+.under-container > div > *{
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+/**
+ *　character/hobby
+ */
+.specialty-container{
+  position: absolute;
+  top:-89px;
+  left:20px;
+  width:40%
+}
+
+.specialty-container > .specialty{
+  min-height:478px;
+  overflow: hidden;
+  background-image: url("image/specialty.png"); 
+}
+
+.specialty-container > .specialty > .character{
+  width:66%;
+  padding:10px 0 0 30px;
+}
+
+.specialty-container > .specialty > .hobby{
+  padding:100px 0 0 30px;
+}
+
+
+.specialty-block > p:nth-child(1){
+  color:#2e2e2e;
+  text-align: left;
+}
+
+.character > p:nth-child(2){
+  height:161px;
+  width:80%;
+  padding-top:80px;
+}
+
+.hobby > p:nth-child(2){
+  width:50%;
+  height:130px;
+  padding:30px 0 0 10px;
+}
+
+/**
+ * photo
+ */
+.photo-container{
+  position: absolute;
+  top:-59px;
+  width:30%;
+  left:400px;
+}
+
+.photo-container > .photo{
+  min-height:411px;
+  padding:2em;
+  background-image: url("image/photo.png");
+}
+
+.photo-container > .photo > p{
+  text-align: center;
+}
+
+.photo-container > .photo > .photo-imgframe{
+  width:70%;
+  height:220px;
+  margin: 0 auto;
+  padding-top:5px;
+  overflow: hidden;
+  
+}
+
+/**
+ * free space
+ */
+ .free-container{
+  position: absolute;
+  top:-73px;
+  right:32px;
+  width:33%;
+}
+.free-container > .free{
+  background-image: url("image/free.png");
+  min-height:390px;
+}
+
+.free-container > .free > p:nth-child(1){
+  padding:90px 40px 0 0 ;
+  text-align: right;
+}
+
+.free-container > .free > p:nth-child(2){
+  padding:90px 0 0 80px ;
+}
